@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: #848484;
+  font-family: "Montserrat";
+}
+
+header.header {
+  font-family: "Raleway", sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+header.header h1 {
+  font-size: 8rem;
+  color: #222222;
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.glitch-window {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 100%;
+  color: #222222;
+  text-shadow: 2px 0 #f9f8f8, -1px 0 yellow, -2px 0 green;
+  overflow: hidden;
+  animation: crt-me 2500ms infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes crt-me {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0);
+  }
+  10% {
+    clip: rect(112px, 9999px, 76px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 77px, 0);
+  }
+  30% {
+    clip: rect(27px, 9999px, 97px, 0);
+  }
+  40% {
+    clip: rect(64px, 9999px, 98px, 0);
+  }
+  50% {
+    clip: rect(61px, 9999px, 85px, 0);
+  }
+  60% {
+    clip: rect(99px, 9999px, 114px, 0);
+  }
+  70% {
+    clip: rect(34px, 9999px, 115px, 0);
+  }
+  80% {
+    clip: rect(98px, 9999px, 129px, 0);
+  }
+  90% {
+    clip: rect(43px, 9999px, 96px, 0);
+  }
+  100% {
+    clip: rect(82px, 9999px, 64px, 0);
+  }
+}
+
+@keyframes crt-me {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0);
+  }
+  10% {
+    clip: rect(112px, 9999px, 76px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 77px, 0);
+  }
+  30% {
+    clip: rect(27px, 9999px, 97px, 0);
+  }
+  40% {
+    clip: rect(64px, 9999px, 98px, 0);
+  }
+  50% {
+    clip: rect(61px, 9999px, 85px, 0);
+  }
+  60% {
+    clip: rect(99px, 9999px, 114px, 0);
+  }
+  70% {
+    clip: rect(34px, 9999px, 115px, 0);
+  }
+  80% {
+    clip: rect(98px, 9999px, 129px, 0);
+  }
+  90% {
+    clip: rect(43px, 9999px, 96px, 0);
+  }
+  100% {
+    clip: rect(82px, 9999px, 64px, 0);
+  }
+}
+
+.bg-dark {
+  background: #000 !important;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-weight: 700;
+
+  display: inline-block;
+  font-size: 15vmin;
+  line-height: 1.205;
+  margin-top: 10%;
+  margin-left: 10%;
+  color: #f9f8f8;
+}
+
+.text__first,
+.text__second {
+  position: relative;
+}
+
+.text__word {
+  opacity: 0;
+}
+
+.text__first-bg,
+.text__second-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.text__first-bg {
+  background-color: #5fbff9;
+}
+
+.text__second-bg {
+  background-color: #f06543;
+}
+
+.text__second {
+  margin-left: 15vmin;
+}
+
+.head {
+  font-family: "Montserrat";
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.ml-10 {
+  margin-left: 10%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.gallery .image_user {
+  height: 150px;
+  width: 125px;
+}
+.mt-10 {
+  margin-top: 10%;
+}
+
+.placeholder {
+  background: rgb(34, 34, 34);
+  background-size: cover;
+  font-size: 1.2rem;
+  padding: 15px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder > .name {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+:root {
+  --color-bg: #34304c;
+  --color-bg2: #534d7a;
+  --color-highlight: #fff;
+}
+
+.goo {
+  font-size: 2rem;
+  line-height: 1.45;
+  display: inline;
+  box-decoration-break: clone;
+  background: var(--color-highlight);
+  padding: 0.5rem 1rem;
+  filter: url("#goo");
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #000;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+.goo:focus {
+  outline: 0;
+}
+
+.addreass {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.form-group > .form-control {
+  background: transparent;
+  border: 0px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+}
+.form-group > label,
+.form-group > .form-control,
+.btn {
+  font-size: 2rem;
+}
+.form-group > .form-control::placeholder {
+  color: rgb(51, 51, 51);
+  font-weight: 100;
+}
+
+.form-group > label {
+  font-weight: 500;
+}
+.nav-item > a:active {
+  color: #fff;
+}
+
+.scroll-downs {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  /* left: 0; */
+  margin: auto;
+
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
