@@ -1,0 +1,14 @@
+html,body{
+    min-height: 100%;
+    background: #e8e8e8;;
+}
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.avatarIcon{
+    width: 70px;
+    height: 70px;
+}
