@@ -5,6 +5,7 @@ import { Layout } from "./../";
 import { AuthProtection } from "./";
 import { history } from "./../../redux/store";
 import { ConnectedRouter } from "connected-react-router";
+import TodoApp from "./../../todo";
 
 class PageRouter extends Component {
   render() {
@@ -17,6 +18,7 @@ class PageRouter extends Component {
             <AuthProtection path="/profilebasics" component={ProfileBasics} />
             <Route path="/profile/:id" component={Profile} />
             <AuthProtection path="/profile" component={Profile} />
+            <AuthProtection path="/todo" component={TodoApp} />
           </Switch>
         </Layout>
       </ConnectedRouter>
